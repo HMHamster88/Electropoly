@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="ElectropolyPrint.StreetControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:e="clr-namespace:ElectropolyPrint"
+             mc:Ignorable="d" Height="{e:MetricExtension 70}" Width="{e:MetricExtension 50}">
+    <Border BorderBrush="Black" BorderThickness="1,1,1,1">
+    <Grid  Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+            <Border BorderBrush="Black" BorderThickness="0,0,0,1" Background="#FF1FE600">
+                <Ellipse Height="{e:MetricExtension 5}" Width="{e:MetricExtension 5}" 
+                         VerticalAlignment="Center" HorizontalAlignment="Center"
+                         Stroke="Black" Fill="White"/>
+            </Border>
+            <Grid Grid.Row="1" Margin="{e:MetricExtension 4}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="{Binding Path=Name, FallbackValue=Название Улицы}" FontSize="{e:MetricExtension 5}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="{e:MetricExtension 2}"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.ColumnSpan="3" Text="Рента без строений" FontSize="{e:MetricExtension 3}"/>
+                    <TextBlock Grid.Column="2" Text="{Binding DefaultRent, FallbackValue=10}" FontSize="{e:MetricExtension 3}" HorizontalAlignment="Right"/>
+                    
+                    <Ellipse Grid.Row="1" Height="{e:MetricExtension 3}" Width="{e:MetricExtension 3}" Stroke="Black"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" Text="1 дом"/>
+                    <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding Rent1House, FallbackValue=20}" FontSize="{e:MetricExtension 3}" HorizontalAlignment="Right"/>
+                    
+                    <Ellipse Grid.Row="2" Height="{e:MetricExtension 3}" Width="{e:MetricExtension 3}" Stroke="Black"/>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="2 дома"/>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Rent2House, FallbackValue=40}" FontSize="{e:MetricExtension 3}" HorizontalAlignment="Right"/>
+
+                    <Ellipse Grid.Row="3" Height="{e:MetricExtension 3}" Width="{e:MetricExtension 3}" Stroke="Black"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Text="3 дома"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding Rent3House, FallbackValue=80}" FontSize="{e:MetricExtension 3}" HorizontalAlignment="Right"/>
+
+                    <Ellipse Grid.Row="4" Height="{e:MetricExtension 3}" Width="{e:MetricExtension 3}" Stroke="Black"/>
+                    <TextBlock Grid.Row="4" Grid.Column="2" Text="4 дома"/>
+                    <TextBlock Grid.Row="4" Grid.Column="2" Text="{Binding Rent4House, FallbackValue=160}" FontSize="{e:MetricExtension 3}" HorizontalAlignment="Right"/>
+
+                    <Ellipse Grid.Row="5" Height="{e:MetricExtension 3}" Width="{e:MetricExtension 3}" Stroke="Black"/>
+                    <TextBlock Grid.Row="5" Grid.Column="2" Text="Отель"/>
+                    <TextBlock Grid.Row="5" Grid.Column="2" Text="{Binding RentHotel, FallbackValue=320}" FontSize="{e:MetricExtension 3}" HorizontalAlignment="Right"/>
+                </Grid>
+            </Grid>
+    </Grid>
+    </Border>
+</UserControl>

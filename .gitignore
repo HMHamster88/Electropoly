@@ -1,4 +1,6 @@
 *.bak
 *.tmp
-*/Debug/
-*/Release/
+**/Debug/
+**/Release/
+*.atsuo
+*.suo
