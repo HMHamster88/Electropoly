@@ -3,9 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:ElectropolyPrint" x:Class="ElectropolyPrint.MainWindow"
         Title="MainWindow" Height="600" Width="800">
-    <Grid Background="Gray">
-
-        <local:StreetControl />
-
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+    <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Print" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+    </Menu>
+    <ScrollViewer Grid.Row="1" Background="Gray" HorizontalScrollBarVisibility="Auto">
+        <local:GameBoardControl x:Name="gameBoard"/>
+    </ScrollViewer>
     </Grid>
 </Window>

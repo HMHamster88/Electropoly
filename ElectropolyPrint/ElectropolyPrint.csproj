@@ -55,10 +55,65 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ChanceControl.xaml.cs">
+      <DependentUpon>ChanceControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommunityChestControl.xaml.cs">
+      <DependentUpon>CommunityChestControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElectricCompanyControl.xaml.cs">
+      <DependentUpon>ElectricCompanyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameBoardControl.xaml.cs">
+      <DependentUpon>GameBoardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameObjects\GameBoard.cs" />
+    <Compile Include="GameObjects\StreetBlock.cs" />
+    <Compile Include="GameObjects\Street.cs" />
+    <Compile Include="IncomeTaxControl.xaml.cs">
+      <DependentUpon>IncomeTaxControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LuxuryTaxControl.xaml.cs">
+      <DependentUpon>LuxuryTaxControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MetricExtension.cs" />
+    <Compile Include="GameObjects\Realty.cs" />
+    <Compile Include="RailwayStantionControl.xaml.cs">
+      <DependentUpon>RailwayStantionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RealtyControl.xaml.cs">
+      <DependentUpon>RealtyControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StreetControl.xaml.cs">
       <DependentUpon>StreetControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WaterWorksControl.xaml.cs">
+      <DependentUpon>WaterWorksControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ChanceControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommunityChestControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ElectricCompanyControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameBoardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IncomeTaxControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LuxuryTaxControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,7 +126,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RailwayStantionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RealtyControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StreetControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WaterWorksControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

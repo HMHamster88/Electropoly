@@ -1,5 +1,4 @@
-﻿using ElectropolyPrint.GameObjects;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,21 +16,13 @@ using System.Windows.Shapes;
 namespace ElectropolyPrint
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для WaterWorksControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WaterWorksControl : UserControl
     {
-        public MainWindow()
+        public WaterWorksControl()
         {
             InitializeComponent();
-            DataContext = new GameBoard();
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            PrintDialog printDlg = new PrintDialog();
-            printDlg.ShowDialog();
-            printDlg.PrintVisual(gameBoard, "Game board Printing.");
         }
     }
 }
